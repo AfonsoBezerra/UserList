@@ -1,0 +1,92 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "airbnb"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "import/no-webpack-loader-syntax": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "react/no-unstable-nested-components": "off",
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "@"
+        ]
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}

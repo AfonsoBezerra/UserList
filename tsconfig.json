@@ -1,0 +1,56 @@
+{
+  "files": [
+    "./src/styles/styled.d.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@interfaces/*": [
+        "src/interfaces/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@theme/*": [
+        "src/styles/global/theme/*"
+      ],
+      "@globalStyles": [
+        "src/styles/global"
+      ],
+      "@styles-components/*": [
+        "src/styles/components/*"
+      ]
+    },
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
