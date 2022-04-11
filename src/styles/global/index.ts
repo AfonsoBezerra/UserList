@@ -115,11 +115,11 @@ export const Reset = createGlobalStyle`
       display: grid;
       gap: 1.25rem;
       grid-template-areas:
-      'birth birth'
+      'age birth'
       'gender phone'
-      'address state'
-      'url url';
+      'address state';
       padding: 1.5rem;
+
 
       @media (max-width: 1024px){
         grid-column: 1;
@@ -137,6 +137,7 @@ export const Reset = createGlobalStyle`
         .content{
           display: grid;
           gap: .25rem;
+          justify-content:center;
           height: auto;
           align-content: flex-start;
           span{
@@ -169,10 +170,13 @@ export const Reset = createGlobalStyle`
         .address{
           grid-area: address;
         }
-        .url{
-          grid-area: url;
+        .age{
+          grid-area: age;
         }
 
       }
+    }
+    .css-1miuj5f-MuiDataGrid-panelWrapper{
+      width: 370px;
     }
 `;

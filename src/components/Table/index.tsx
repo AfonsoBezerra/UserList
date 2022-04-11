@@ -179,7 +179,7 @@ const Table: React.FC = () => {
         <Box sx={style}>
           {modalData.map((row: any) => {
             const {
-              id, fullName, thumbnail, email, gender, formattedDate, phone, local, address
+              id, fullName, thumbnail, email, gender, formattedDate, phone, local, address, age
             } = row;
 
             let bgcolor = '#000000';
@@ -205,18 +205,18 @@ const Table: React.FC = () => {
                   </div>
                 </div>
                 <div className="about">
-                  <div className="information">
-                    <div className="content birth">
-                      <span>Birth</span>
-                      <h1>{formattedDate}</h1>
-                    </div>
-
+                  <div className="content age">
+                    <span>Age</span>
+                    <h1>{age}</h1>
+                  </div>
+                  <div className="content birth">
+                    <span>Birth</span>
+                    <h1>{formattedDate}</h1>
                   </div>
                   <div className="content gender">
                     <span>Gender</span>
                     <h1>{gender}</h1>
                   </div>
-
                   <div className="content phone">
                     <span>Phone</span>
                     <h1>{phone}</h1>
@@ -228,10 +228,6 @@ const Table: React.FC = () => {
                   <div className="content state">
                     <span>State</span>
                     <h1>{local}</h1>
-                  </div>
-                  <div className="content url">
-                    <span>URL</span>
-                    <h1>https://randomuser.me/api/</h1>
                   </div>
                 </div>
               </section>

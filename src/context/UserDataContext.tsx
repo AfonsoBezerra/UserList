@@ -13,7 +13,8 @@ interface IData {
   email: string,
   phone: number,
   local: string,
-  address: string
+  address: string,
+  age: string
 }
 type value = { results: IData }
 interface IContext {
@@ -48,7 +49,8 @@ export const UserDataProvider: React.FC = ({ children }) => {
           uuid: id
         },
         dob: {
-          date
+          date,
+          age
         },
         picture: {
           large: thumbnail
@@ -81,7 +83,8 @@ export const UserDataProvider: React.FC = ({ children }) => {
             email,
             phone,
             local,
-            address
+            address,
+            age
           }
         }
       );
