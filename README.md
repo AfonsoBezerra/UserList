@@ -1,8 +1,8 @@
-# Controle de Users
+# User Control
 
-Recebe dados fakes de usuários, a partir da Api RandomUser => https://randomuser.me/api/ e faz a listagem.
+Receives fake user data from the API RandomUser => https://randomuser.me/api/ and make the list.
 
-## Getting Started
+##  :octocat: Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -33,12 +33,10 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Authors
 
-* **Afonso Bezerra** - *Programmer* - [AfonsoBezerra](https://github.com/AfonsoBezerra)
+* **Afonso Bezerra** - *Programmer* - [AfonsoBezerra](https://github.com/AfonsoBezerra) :smiley:
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* With willpower and patience we can go far :zap:
+* how about a coffee? :coffee:
